@@ -34,11 +34,6 @@ jobs:
       run: pnpm install --frozen-lockfile
     - name: Build
       run: pnpm build-only 
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: dist
   deploy:
     needs: build
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
