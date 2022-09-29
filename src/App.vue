@@ -10,7 +10,7 @@ import { computed, reactive, ref } from "vue"
 const operators = ('-+/*')
 const numbers = ('1234567890')
 const state = reactive({
-  stack: ['999999999999999999'],
+  stack: ['0'],
   calculation_failed: false
 })
 // let stack = ["0"]
